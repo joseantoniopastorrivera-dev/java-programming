@@ -18,6 +18,7 @@ El contenido se organiza de manera modular por unidades y bloques de aprendizaje
 * **`ut09-entrada-y-salida-de-datos/`** : Gestión de ficheros y flujos de datos en Java mediante `File`, `FileWriter`, `BufferedWriter` y `PrintWriter`.
 * **`ut10-acceso-a-bases-de-datos-jdbc/`** : Conexión de Java con bases de datos relacionales MySQL mediante JDBC, sentencias preparadas (`PreparedStatement`) y arquitectura DAO.
 * **`ut11-simulacros-de-examen/`** : Casos prácticos integrales y simulacros de examen (Gestión de alquileres de vehículos y App de gestión de pedidos con mapas y capas).
+* **`repaso-2026-2027/`** : Repaso de Java al empezar 2º de DAM. Seis fichas de un juego RPG por fases (`fase-1/` a `fase-6/`), cada una con su enunciado en PDF y la solución en `App.java`.
 
 ---
 
@@ -32,4 +33,4 @@ El contenido se organiza de manera modular por unidades y bloques de aprendizaje
 
 ## 👨‍💻 Autor
 
-* **Autor:** José Antonio Pastor Rivera (`joseantoniopastorrivera-creator`)
+* **Autor:** José Antonio Pastor Rivera (`joseantoniopastorrivera-dev`)
