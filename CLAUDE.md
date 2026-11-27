@@ -9,6 +9,7 @@ Reglas comunes a todos mis repos (copia de mi `C:\dev\CLAUDE.md`, para que tambi
 - Si ves un error de concepto o algo que no entiendo bien, dímelo aunque no te lo pregunte.
 - Responde en español.
 - No hagas commit ni push sin que te lo pida. Commits sin `Co-Authored-By` ni líneas de atribución.
+- **Commits en GitHub:** uno por cambio, nunca mezclados, cada uno con su push. Mensaje en inglés profesional y técnico (conventional commits: `type(scope): summary`, en imperativo), con un cuerpo que explica qué cambia y por qué.
 - **Pull requests en todos los repos (asignaturas y personales):** nunca se commitea directo en `main`. Una rama por cambio (nombre con guiones, sin barra: con barra GitHub dio error 500), sus commits pequeños, `gh pr create --fill --base main`, tests en local y CI en verde (`gh pr checks <n> --watch`), y `gh pr merge <n> --merge --delete-branch` (nunca squash, para que cada commit quede en el historial). Si el repo no tiene tests o CI para lo que cambia, dilo y propón añadirlos. Si la carpeta la comparten otras sesiones, trabaja en un worktree propio y no cambies de rama allí. Sigue valiendo que el commit, push y merge solo se hacen cuando yo lo pida.
 - No subas binarios generados (`target/`, `*.class`, `__pycache__/`, `*.pyc`, `bin/`, `obj/`, `Library/` de Unity).
 - Nunca leas, muestres ni subas ficheros `.env`, tokens ni credenciales.
@@ -19,7 +20,7 @@ Ejercicios y proyectos de Java organizados por unidad. No es un único proyecto:
 ## Estructura
 - `ut01-introduccion-a-la-programacion/` — pseudocódigo (PSeInt).
 - `ut02-ut03-fundamentos-y-estructuras-java/01..10-*` — sintaxis, tipos, Scanner, condicionales, bucles, arrays, Math, Strings, minijuegos, algoritmos de ordenación.
-- `ut04-programacion-orientada-a-objetos/` — clases básicas (lampara, intervalo, quiniela, empleados…).
+- `ut04-programacion-orientada-a-objetos/` — clases básicas (lampara, intervalo, quiniela, empleados…) y el proyecto Maven `empleados/`.
 - `ut05-programacion-orientada-a-objetos-avanzada/` — herencia, interfaces; proyectos Maven `proyecto-empleados/empleados`, `proyecto-interfaces/interfaces`, `proyecto-taller/taller`.
 - `ut06-manejo-de-excepciones/excepciones/` — Maven.
 - `ut07-colecciones-y-estructuras-de-datos/` — ArrayList, mapas, listas enlazadas, retos.
@@ -29,11 +30,10 @@ Ejercicios y proyectos de Java organizados por unidad. No es un único proyecto:
 
 ## Compilar y ejecutar
 - Ejercicios sueltos: `javac Archivo.java && java Archivo` desde su carpeta.
-- Proyectos con `pom.xml`: `mvn compile exec:java` o desde el IDE. Java 17; JDBC usa `mysql-connector-j`.
+- Proyectos con `pom.xml` (Java 17; JDBC usa `mysql-connector-j`): desde el IDE, o `mvn compile exec:java -Dexec.mainClass=<paquete.ClasePrincipal>` (ningún pom configura `exec-maven-plugin`).
 
 ## Notas
-- `target/`, `bin/`, `out/` y `*.class` están en `.gitignore`: no los fuerces al commit.
-- Paquetes de los proyectos Maven: `com.japr.*`.
+- Paquetes de los proyectos Maven: `com.japr.*`, salvo `ut04-programacion-orientada-a-objetos/empleados/` (`com.example`).
 
 ## Karpathy guidelines
 
