@@ -20,6 +20,17 @@ El contenido se organiza de manera modular por unidades y bloques de aprendizaje
 * **`ut11-simulacros-de-examen/`** : Casos prácticos integrales y simulacros de examen (Gestión de alquileres de vehículos y App de gestión de pedidos con mapas y capas).
 * **`repaso-2026-2027/`** : Repaso de Java al empezar 2º de DAM. Seis fichas de un juego RPG por fases (`fase-1/` a `fase-6/`), cada una con su enunciado en PDF y la solución en `App.java`.
 
+### ➕ Ampliaciones (noviembre de 2026)
+
+Ejercicios del curso ampliados y resueltos con comentarios línea a línea. Cada carpeta trae su `ENUNCIADO.md` y está junto a su ejercicio original, que no se modifica:
+
+* **UT02-UT03:** búsqueda binaria, QuickSort y ShellSort (`10-algoritmos-ordenacion/ampliacion/`), `Palindromos.java` y el minijuego `Ahorcado.java`.
+* **UT04:** `lampara_ampliada/` (enum de modos y consumo), `intervalo_ampliado/` (inmutable, `Comparable` y fusión de intervalos) y `quiniela_ampliada/` (dobles, triples y premios).
+* **UT05:** `proyecto-empleados/nominas_ampliado/` (interfaz con método `default`, `Comparable` y `Comparator`).
+* **UT06:** `excepciones_ampliado/` (jerarquía propia, excepciones encadenadas y `try-with-resources`).
+* **UT07:** `banco_ampliado/`, `biblioteca_ampliada/`, `dni_ampliado/`, `agenda_contactos/` y `cola_supermercado/` (`HashMap`, `TreeMap`, `HashSet`, `ArrayDeque`).
+* **UT09:** `inventario_csv/` (guardar y cargar objetos en CSV).
+
 ---
 
 ## 🛠️ Entorno y Tecnologías
